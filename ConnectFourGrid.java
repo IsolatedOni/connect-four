@@ -7,6 +7,7 @@ public class ConnectFourGrid {
 		
 	}
 	
+	
 	public boolean checkWin(int num){
 		boolean answer = false;
 		boolean loopEnd = false;
