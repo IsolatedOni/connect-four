@@ -1,2 +1,2 @@
 # connect-four
-![alt text](http://url/to/img.png)
+![alt text](Images/Connect Four Game Flowchart.png)
