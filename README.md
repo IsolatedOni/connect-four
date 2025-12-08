@@ -1,2 +1,2 @@
 # connect-four
-![alt text](Images/Connect Four Game Flowchart.png)
+![alt text](Connect Four Game Flowchart.png)
