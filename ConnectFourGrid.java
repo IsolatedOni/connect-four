@@ -10,7 +10,7 @@ public class ConnectFourGrid {
 	public void setBoard(){
       for (int i = 0; i < gameGrid.length; i++) {
             for (int j = 0; j < gameGrid[0].length; j++) {
-                arr[i][j] = 0;
+                gameGrid[i][j] = 0;
            	 }
       }
   	}
