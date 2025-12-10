@@ -22,12 +22,14 @@ public class ConnectFourGrid {
 		searchLoop:
 			for (int col = gameGrid[0].length; col > 0; col--) {
 				for (int row = gameGrid.length; row > 0; row--) {
-					if(gameGrid[row][col] == num) {
-						if(gameGrid[row - 1][col] == num) {
-							if(gameGrid[row - 2][col] == num){
-								if(gameGrid[row - 3][col] == num) {
-									answer = true;
-									break searchLoop;
+					if(row > 2){
+						if(gameGrid[row][col] == num) {
+							if(gameGrid[row - 1][col] == num) {
+								if(gameGrid[row - 2][col] == num){
+									if(gameGrid[row - 3][col] == num) {
+										answer = true;
+										break searchLoop;
+									}
 								}
 							}
 						}
@@ -52,6 +54,15 @@ public class ConnectFourGrid {
 	}
 
 	public void move(int num){
-	
+            
+			moveLoop:
+			for (int col = gameGrid[0].length; col > 0; col--) {
+                for (int row = gameGrid.length; row > 0; row--) {
+                    if(gameGrid[row][col] == 0){
+						gameGrid[row][col] = num;
+						break moveLoop;
+					}
+                }
+            }
 	}
 }
