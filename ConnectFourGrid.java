@@ -65,4 +65,10 @@ public class ConnectFourGrid {
                 }
             }
 	}
+
+	public static int computerChoice(){
+		int choice = (int) (Math.random() * 6) + 1;
+
+		return choice;
+	}
 }
