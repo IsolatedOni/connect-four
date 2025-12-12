@@ -7,8 +7,16 @@ public class Main{
 
     boolean gameCond;
 
-    while(gameCond == false){
+    
+    if(coin == 1){
+      while(gameCond == false){
 
+      }
+    
+    } else if(coin == 2){
+      while(gameCond == false){
+
+      }
     }
   }
 }
